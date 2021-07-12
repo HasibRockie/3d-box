@@ -79,3 +79,45 @@ h1{
 .cube{
     animation: loop 10s linear infinite;
 }
+
+
+
+
+@media (max-width:900px){
+    .cube{
+        transform-style: preserve-3d;
+        width: 200px;
+        height: 200px;
+        margin:auto;
+        position: relative;
+    }
+
+    .cube img:nth-child(1){
+        transform: rotateY(0deg) translateZ(100px);
+    }
+    .cube img:nth-child(2){
+        transform: rotateY(-90deg) translateZ(100px);
+    }
+    .cube img:nth-child(3){
+        transform: rotateY(180deg) translateZ(100px);
+    }
+    .cube img:nth-child(4){
+        transform: rotateY(90deg) translateZ(100px);
+    }
+    .cube img:nth-child(5){
+        transform: rotateX(90deg) translateZ(100px);
+    }
+    .cube img:nth-child(6){
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+    
+    h1{
+        font-size: 1.5rem;
+    }
+
+    p{
+        position: absolute;
+        right: 5%;
+        bottom: 3%;
+    }
+}
